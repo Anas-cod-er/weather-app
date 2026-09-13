@@ -3,21 +3,24 @@ import { RouterProvider } from "react-router/dom";
 
 import './App.css'
 import Home from "./pages/Home";
+import MainLayout from "./layouts/MainLayout";
 import About from "./pages/About";
 
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>Hello World</div>,
-  },
-  {
-    path: "/about",
-    element: <About />
-  },
-  {
-    path: "/home",
-    element: <Home></Home>
+    Component: MainLayout,
+    children: [
+      {
+        index: true,
+        element: <Home />
+      },
+      {
+        path: "/about",
+        element: <About/>
+      }
+    ]
   }
 ]);
 
