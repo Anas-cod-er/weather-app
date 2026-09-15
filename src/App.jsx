@@ -5,6 +5,7 @@ import './App.css'
 import Home from "./pages/Home";
 import MainLayout from "./layouts/MainLayout";
 import About from "./pages/About";
+import Weather from "./pages/Weather";
 
 
 const router = createBrowserRouter([
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
       {
         path: "/about",
         element: <About/>
+      },
+      {
+        path: "/weather",
+        element: <Weather />
       }
     ]
   }
