@@ -55,7 +55,7 @@ const LocationModal = ({ onClose }) => {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 px-4 backdrop-blur-sm">
-      <div className="glass-panel w-full max-w-md rounded-[28px] p-5 shadow-2xl shadow-orange-900/30 sm:p-6">
+      <div className="glass-panel w-full max-w-md rounded-3xl p-5 shadow-2xl shadow-orange-900/30 sm:p-6">
         <div className="flex items-center justify-between gap-4">
           <h2 className="text-2xl font-bold text-white">Where are you today?</h2>
           <button
@@ -80,7 +80,7 @@ const LocationModal = ({ onClose }) => {
 
             <button
               type="submit"
-              className="w-full rounded-2xl bg-gradient-to-r from-orange-400 via-orange-500 to-amber-600 px-5 py-3 text-base font-semibold text-white shadow-lg shadow-orange-500/30 transition hover:-translate-y-0.5 hover:shadow-orange-500/40"
+              className="w-full rounded-2xl bg-linear-to-r from-orange-400 via-orange-500 to-amber-600 px-5 py-3 text-base font-semibold text-white shadow-lg shadow-orange-500/30 transition hover:-translate-y-0.5 hover:shadow-orange-500/40"
             >
               Get weather
             </button>
